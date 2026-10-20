@@ -16,13 +16,13 @@ cask "kubeyard" do
 
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "KubeYard.app"
 
   # The app is ad-hoc signed, not notarized yet: without this Gatekeeper blocks the first start.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/KubeYard.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/KubeYard.app"]
   end
 
   zap trash: [
