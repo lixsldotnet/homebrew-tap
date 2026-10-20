@@ -1,6 +1,6 @@
 cask "kubeyard" do
-  version "0.2.8"
-  sha256 "73e46f9962d60f4b730d414fd78fbd3d0a86337d04da74c3b380c7ea22bab7c0"
+  version "0.2.9"
+  sha256 "38e15fbdba52b323089970c2671ba41859b8f70800e1f34a607e43bb190b3685"
 
   url "https://kubeyard.net/download/#{version}/KubeYard-#{version}-arm64.dmg"
   name "KubeYard"
