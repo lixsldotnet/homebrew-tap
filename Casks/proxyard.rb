@@ -1,6 +1,6 @@
 cask "proxyard" do
-  version "0.1.5"
-  sha256 "6dc59f0c9831b397a43844175f5a46e6daabdf364a88ace92bd0cce38c1377f2"
+  version "0.1.6"
+  sha256 "10c274c4c45b421ef2bc670b2daf48ce9590516b75b4bfbd49b069948274e6aa"
 
   url "https://proxyard.net/download/#{version}/ProxYard-#{version}-arm64.dmg"
   name "ProxYard"
