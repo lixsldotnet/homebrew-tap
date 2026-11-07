@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Repo avatar of lixsldotnet/homebrew-tap. Style guide: ~/.claude/docs/repo-style.md
+       render: rsvg-convert -w 512 -h 512 .github/avatar.svg -o .github/avatar.png -->
+  <rect width="512" height="512" rx="112" fill="#16161b"/>
+  <rect x="2" y="2" width="508" height="508" rx="110" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="4"/>
+  <g transform="translate(-18 0)">
+  <g fill="#fbbf24">
+    <path d="M 150 176 H 330 V 352 A 36 36 0 0 1 294 388 H 186 A 36 36 0 0 1 150 352 Z"/>
+    <path d="M 150 190 C 130 150 170 122 204 136 C 220 108 268 108 284 136 C 314 120 352 146 330 190 Z"/>
+  </g>
+  <path d="M 330 222 H 352 A 44 44 0 0 1 352 310 H 330" fill="none" stroke="#fbbf24" stroke-width="30"/>
+  <g stroke="#16161b" stroke-width="16" stroke-linecap="round"><path d="M 204 236 V 330"/><path d="M 276 236 V 330"/></g>
+  </g>
+</svg>
