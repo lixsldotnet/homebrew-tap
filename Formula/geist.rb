@@ -2,9 +2,9 @@
 class Geist < Formula
   desc "Terminal coding agent with local MLX models and a guard model"
   homepage "https://getgeist.dev/"
-  url "https://getgeist.dev/releases/geist-2.0.0-build.20261107.4-osx-arm64.tar.gz"
-  version "2.0.0-build.20261107.4"
-  sha256 "9c4172a8e5c023b68ba3c96c948a971842fa393e1b30c2b1a173efbc83ce021d"
+  url "https://getgeist.dev/releases/geist-2.0.0-build.20261107.5-osx-arm64.tar.gz"
+  version "2.0.0-build.20261107.5"
+  sha256 "cd067ac0dce54194d7c88335710aca501ba3d09474c5d2e624fa6cb40a45cec5"
 
   livecheck do
     url "https://getgeist.dev/releases/latest.json"
