@@ -2,9 +2,9 @@
 class Geist < Formula
   desc "Terminal coding agent with local MLX models and a guard model"
   homepage "https://geist.lixsl.net/"
-  url "https://geist.lixsl.net/releases/geist-2.0.0-build.20261107-osx-arm64.tar.gz"
-  version "2.0.0-build.20261107"
-  sha256 "3d8697c4ca9c88b7a59a97704821a5f7d2ed8a80689919d48aa152759fb491c0"
+  url "https://geist.lixsl.net/releases/geist-2.0.0-build.20261107.2-osx-arm64.tar.gz"
+  version "2.0.0-build.20261107.2"
+  sha256 "42fe4d18bf929e978f1ec2bf5684bdada54020f6a69170d8f8831618784cf8d1"
 
   livecheck do
     url "https://geist.lixsl.net/releases/latest.json"
