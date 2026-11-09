@@ -13,6 +13,8 @@ class Geist < Formula
     end
   end
 
+  disable! date: "2026-11-09", because: "is being rebuilt as Geist 3, there is no download right now"
+
   depends_on arch: :arm64
   depends_on :macos
 
