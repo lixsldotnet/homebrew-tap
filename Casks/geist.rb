@@ -20,16 +20,18 @@ cask "geist" do
 
   app "Geist.app"
 
-  # not signed by Apple yet: without this macOS calls the download damaged
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Geist.app"]
-    # the `geist` command: a session in this folder (geist --temp, --resume, --continue)
-    File.write("#{HOMEBREW_PREFIX}/bin/geist", "#!/bin/sh\nexec \"#{appdir}/Geist.app/Contents/Resources/bin/geistd\" open \"$@\"\n")
-    File.chmod(0755, "#{HOMEBREW_PREFIX}/bin/geist")
+  app_path = "#{appdir}/Geist.app"
+
+  # not signed by Apple yet: without this macOS calls the download damaged; then the `geist`
+  # command (a session in this folder: geist --temp, --resume, --continue)
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", app_path], writable_paths: [app_path], must_succeed: false
+    write_file "bin/geist", "#!/bin/sh\nexec \"#{app_path}/Contents/Resources/bin/geistd\" open \"$@\"\n", base: :homebrew_prefix
+    set_permissions "bin/geist", "0755", base: :homebrew_prefix, recursive: false
   end
 
-  uninstall_postflight do
-    File.delete("#{HOMEBREW_PREFIX}/bin/geist") if File.exist?("#{HOMEBREW_PREFIX}/bin/geist")
+  uninstall_postflight_steps do
+    remove "bin/geist", base: :homebrew_prefix
   end
 
   zap trash: [
