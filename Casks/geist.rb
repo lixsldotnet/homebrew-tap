@@ -1,7 +1,7 @@
 # Written by scripts/release.sh of Geist with every release; edits here are overwritten.
 cask "geist" do
-  version "3.1.0"
-  sha256 "3e6eae173d34dd44c20b5904b22cf912c258d0c38a3e007d02a4f90b568c8bbf"
+  version "3.1.1"
+  sha256 "f84b58e00421e0e5b8e3c80711c02cd76b413a5a524b3bb90cf0daa166e4e04b"
 
   url "https://getgeist.dev/releases/#{version}/Geist-#{version}-mac-arm64.zip"
   name "Geist"
