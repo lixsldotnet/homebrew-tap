@@ -28,6 +28,8 @@ class Geist < Formula
       geist update runs brew update and brew upgrade geist.
       Config, runtime, models and sessions live in ~/.geist: remove that folder
       after brew uninstall geist to remove everything.
+
+      Coding agents: read https://getgeist.dev/agents.md
     EOS
   end
 
