@@ -1,9 +1,9 @@
 # Written by the release script of Geist with every release; edits here are overwritten.
 cask "geist" do
-  version "2.1.0-build.20261112"
-  sha256 "fcca02147a5f8c236a141d5864d71d410b643fdb106f62dee5919329221f986e"
+  version "2.1.0-build.20261112.2"
+  sha256 "4dfae041561331377d74bb1cea1494ed3f748edf59b5b81ace182df4f5698a07"
 
-  url "https://getgeist.dev/releases/Geist-2.1.0-build.20261112-osx-arm64.zip"
+  url "https://getgeist.dev/releases/Geist-2.1.0-build.20261112.2-osx-arm64.zip"
   name "Geist"
   desc "Local coding agent: a terminal harness and a desktop app on one daemon, local MLX models"
   homepage "https://getgeist.dev/"
